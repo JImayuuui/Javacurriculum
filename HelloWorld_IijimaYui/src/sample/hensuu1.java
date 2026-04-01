@@ -30,7 +30,18 @@ public class hensuu1 {
 		
 		
 		
-		//
+		//結果表示
+		System.out.println("byteNum:" + byteNum);
+		System.out.println("shortNum:" + shortNum);
+		System.out.println("intNum:" + intNum);
+		System.out.println("longNum:" + longNum);
+		System.out.println("floatNum:" + floatNum);
+		System.out.println("doubleNum:" + doubleNum);
+		System.out.println("letter:" + letter);
+		System.out.println("letters:" + letters);
+		System.out.println("isBoolean:" + isBoolean);
+		
+		
 	}
 
 }
