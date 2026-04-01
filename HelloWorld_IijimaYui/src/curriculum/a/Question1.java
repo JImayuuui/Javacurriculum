@@ -41,6 +41,75 @@ public class Question1 {
 		System.out.println("isBoolean:" + isBoolean);
 		
 		
+		//Q3 値を代入した変数を用いて出力をしてください
+		/*
+	     11110を出力
+         20を出力
+         a ハロー trueを出力
+        11130数字を全て足して出力
+        10000000000小数点以外の数字を全てかけて出力
+        0.105 10.5割る100をして出力
+        -90 10引く100をして出力
+        System.out.println( );
+		*/
+		
+		System.out.println( byteNum + shortNum + intNum + longNum );
+		//byteNum + byteNum
+		System.out.println( byteNum + byteNum );
+		
+		//floatNum + doubleNum
+		//System.out.println( floatNum + doubleNum );
+		
+		System.out.println( letter + letters + isBoolean);
+		
+		 System.out.println( byteNum + shortNum + intNum + longNum + byteNum + byteNum );
+		
+		 System.out.println( byteNum * shortNum * intNum * longNum );
+		
+		 System.out.println( doubleNum / shortNum );
+		
+		 System.out.println( byteNum - shortNum );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 	}
 
