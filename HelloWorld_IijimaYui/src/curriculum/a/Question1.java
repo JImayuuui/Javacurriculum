@@ -14,7 +14,7 @@ public class Question1 {
 		char letter = '\u0000';
 		String letters = null;
 		boolean isBoolean = false;
-	//int number;  // int型の変数 number を宣言がこれ基本
+		//int number;  // int型の変数 number を宣言がこれ基本
 		
 		// O2. 1で宣言した各型の変数に指定された値を代入してください
 		byteNum = 10;
@@ -26,8 +26,6 @@ public class Question1 {
 		letter = 'a';
 		letters = "ハロー";
 		isBoolean = true;
-		
-		
 		
 		//結果表示
 		System.out.println("byteNum:" + byteNum);
@@ -42,8 +40,7 @@ public class Question1 {
 		
 		
 		//Q3 値を代入した変数を用いて出力をしてください
-		/*
-	     11110を出力
+		/* 11110を出力
          20を出力
          a ハロー trueを出力
         11130数字を全て足して出力
@@ -69,7 +66,6 @@ public class Question1 {
 		 System.out.println( doubleNum / shortNum );
 		
 		 System.out.println( byteNum - shortNum );
-		
 		
 		 /*Q4 name という String型の変数 を宣言し
 		 その変数に "山田太郎" という値を代入してください。
@@ -111,11 +107,67 @@ public class Question1 {
 		//price を int型 に変換し、整数価格: 99 とコンソールに表示してください。
 		
 		double price =99.99;
+		int intprice = (int) price;
+		System.out.println("整数価格：" + intprice );
+		
+		/* Q9  String 型の変数 numStr に "123" を代入
+         numStr を int 型に変換し、
+         変換後の値: の後ろにnumStr + 10 した結果をコンソールに表示してください。
+		*/
+		String numStr = "123";
+		int intStr = Integer.parseInt(numStr);
+		System.out.println(intStr + 10);
+		
+		//Q10 int 型の変数 num に 50 を代入
+		//num を String 型に変換し、"得点: 50点" の形で表示
+		
+		int num = 50;
+		String numst = String.valueOf(num);
+		System.out.println("得点：" + numst + "点");
+		
+		/*Q11 次の条件を満たすプログラムを条件演算子を使用して作成してください。
+         int 型の変数 a に 10 を代入
+		 int 型の変数 b に 20 を代入
+		 a が b より小さいかどうかを boolean 変数 result に代入
+		 result の値を表示
+		 */
+		int a = 10;
+		int b = 20;
+		boolean result =(a < b);
+		System.out.println(result);
+		
+		/*Q12 条件演算子（三項演算子）を使用してください。
+		int 型の変数 x に 15 を代入
+		x が 10 以上なら "OK"、そうでなければ "NG" を表示
+		プログラムでは、「もし〇〇なら△△する」というような 条件によって処理を変えることがよくあります。
+		こういった処理を、通常は if 文を使って書きますが、短くシンプルに書ける方法が
+		「条件演算子（三項演算子）」 です
+		 */
+		int x = 15;
+		String z = (x >= 10) ? "OK":"NG";
+		System.out.println(z);
+		
+		/*Q13 String text = "私はJavaが好きです。Javaは楽しい！";という
+		文章の中にある 「Java」 を 「Python」 に置き換えて表示させてください
+		 * 
+		 */
+		String text = "私はJavaが好きです。Javaは楽しい！";
+		text = text.replace("Java","Python");
+		System.out.println(text);
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
 		
 		
 	}
-	}
+}
 
