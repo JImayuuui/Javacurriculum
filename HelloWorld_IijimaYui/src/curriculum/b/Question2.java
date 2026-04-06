@@ -39,26 +39,43 @@ public class Question2 {
 	int x = 30;
 	int y = 15;
 	int z = 50;
+	if (x >= y && x >= z) {
+		System.out.println(x + "が一番大きい数です");
+		} else if (y >= x && y >= z) {
+		System.out.println(y + "が一番大きい数です");
+		} else if (z >= x && z >= y) {
+		System.out.println(z + "が一番大きい数です");
+		}
 	
+	/* Q5 int 型の変数 num を用意　コンソール入力でいずれかの値を代入し
+		num の値が 0 より大きければ "正の数です" と表示
+		num の値が 0 なら "0 です" と表示
+		num の値が 0 より小さければ "負の数です" と表示
+	 */
+	int num = -5;
+	if (num > 0) {
+		System.out.println("正の数です");
+	}else if (num == 0) {
+		System.out.println("0です");
+	}else if (num < 0)	{
+		System.out.println("負の数です");
+	}
 	
+	/* Q6 int 型の変数 value を用意　コンソール入力でいずれかの値を代入し
+		value が 偶数 なら "偶数です" と表示
+		value が 奇数 なら "奇数です" と表示
+	 */
+	int value = 1500;
+	if (value % 2 == 0) {
+		System.out.println("偶数です");
+	}else {
+		System.out.println("奇数です");
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	//三項演算子バージョン
+	int value1 =2525;
+	String result = (value1 %2 == 0)?"偶数":"奇数";
+	System.out.println(result +"です");
 	
 	
 	
