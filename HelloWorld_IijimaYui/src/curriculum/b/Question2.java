@@ -77,6 +77,66 @@ public class Question2 {
 	String result = (value1 %2 == 0)?"偶数":"奇数";
 	System.out.println(result +"です");
 	
+	/*Q7  int 型の変数 score にコンソール入力で 0 から 100 のいずれかの数値を代入し
+		90 以上なら "優"
+		70 以上なら "良"
+		50 以上なら "可"
+		50 未満なら "不可"　を表示
+	 */
+	int score1 =65;
+	if (score1 >= 90 ) {
+		System.out.println("優");
+		}else if (score1 >= 70 && age1 <= 89) {
+		System.out.println("良");
+		}else if (score1 >= 50 && age1 <= 69) {
+		System.out.println("可");
+		}else if(score1 < 50){
+		System.out.println("不可");
+		}
+	
+	//Q8 コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成してください
+	if(input == null || input.isBlank()) {
+		System.out.println("入力が無効です");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
