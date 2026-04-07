@@ -42,6 +42,17 @@ public class hensuu1 {
 		System.out.println("isBoolean:" + isBoolean);
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
 	}
 
 }

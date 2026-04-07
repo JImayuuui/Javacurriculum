@@ -1,4 +1,5 @@
 package curriculum.b;
+import java.util.Scanner;
 
 public class Question2 {
 
@@ -52,7 +53,7 @@ public class Question2 {
 		num の値が 0 なら "0 です" と表示
 		num の値が 0 より小さければ "負の数です" と表示
 	 */
-	int num = -5;
+	int num = 0;
 	if (num > 0) {
 		System.out.println("正の数です");
 	}else if (num == 0) {
@@ -65,7 +66,7 @@ public class Question2 {
 		value が 偶数 なら "偶数です" と表示
 		value が 奇数 なら "奇数です" と表示
 	 */
-	int value = 1500;
+	int value = 0;
 	if (value % 2 == 0) {
 		System.out.println("偶数です");
 	}else {
@@ -86,60 +87,97 @@ public class Question2 {
 	int score1 =65;
 	if (score1 >= 90 ) {
 		System.out.println("優");
-		}else if (score1 >= 70 && age1 <= 89) {
+		}else if (score1 >= 70 && score1 <= 89) {
 		System.out.println("良");
-		}else if (score1 >= 50 && age1 <= 69) {
+		}else if (score1 >= 50 && score1<= 69) {
 		System.out.println("可");
 		}else if(score1 < 50){
 		System.out.println("不可");
 		}
 	
 	//Q8 コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成してください
-	if(input == null || input.isBlank()) {
-		System.out.println("入力が無効です");
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
 
-}
+	try (Scanner scanner = new Scanner(System.in)) {
+        System.out.print("入力してください");
+        String input = scanner.nextLine();
+
+        if (input.isBlank()) {
+            System.out.println("入力が無効です");
+        } else {
+            System.out.println("入力したもの: " + input);
+        }
+
+     /*Q9  int 型の変数 day を用意（コンソール入力で1～7 のいずれかの数値を代入）
+			day の値に応じて曜日を表示
+      */
+      int day = 2;
+      switch (day) {
+        case 1:
+            System.out.println("今日は月曜日です");
+            break;
+           case 2:
+            System.out.println("今日は火曜日です");
+            break;
+           case 3:
+            System.out.println("今日は水曜日です");
+            break;
+           case 4:
+            System.out.println("今日は木曜日です");
+            break;
+           case 5:
+            System.out.println("今日は金曜日です");
+            break;
+           case 6:
+            System.out.println("今日は土曜日です");
+            break;
+           case 7:
+            System.out.println("今日は日曜日です");
+            break;
+           default:
+            System.out.println("無効な値です");
+      }
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	}
+	}
