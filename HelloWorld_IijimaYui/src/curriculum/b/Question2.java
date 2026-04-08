@@ -53,31 +53,34 @@ public class Question2 {
 		num の値が 0 なら "0 です" と表示
 		num の値が 0 より小さければ "負の数です" と表示
 	 */
-	int num = 0;
+	Scanner scanner1 = new Scanner(System.in);
+    System.out.print("値を入力してください: ");
+    int num = scanner1.nextInt();
 	if (num > 0) {
 		System.out.println("正の数です");
 	}else if (num == 0) {
 		System.out.println("0です");
 	}else if (num < 0)	{
 		System.out.println("負の数です");
+		scanner1.close();
 	}
+	
+
 	
 	/* Q6 int 型の変数 value を用意　コンソール入力でいずれかの値を代入し
 		value が 偶数 なら "偶数です" と表示
 		value が 奇数 なら "奇数です" と表示
 	 */
-	int value = 0;
+	Scanner scanner = new Scanner(System.in);
+    System.out.print("値を入力してください: ");
+    int value = scanner.nextInt();
 	if (value % 2 == 0) {
 		System.out.println("偶数です");
 	}else {
 		System.out.println("奇数です");
+		scanner.close();
+
 	}
-	
-	//三項演算子バージョン
-	int value1 =2525;
-	String result = (value1 %2 == 0)?"偶数":"奇数";
-	System.out.println(result +"です");
-	
 	/*Q7  int 型の変数 score にコンソール入力で 0 から 100 のいずれかの数値を代入し
 		90 以上なら "優"
 		70 以上なら "良"
@@ -97,9 +100,9 @@ public class Question2 {
 	
 	//Q8 コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成してください
 
-	try (Scanner scanner = new Scanner(System.in)) {
+	try (Scanner scanner2 = new Scanner(System.in)) {
         System.out.print("入力してください");
-        String input = scanner.nextLine();
+        String input = scanner2.nextLine();
 
         if (input.isBlank()) {
             System.out.println("入力が無効です");
