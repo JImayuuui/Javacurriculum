@@ -54,7 +54,7 @@ public class Question2 {
 		num の値が 0 より小さければ "負の数です" と表示
 	 */
 	Scanner scanner1 = new Scanner(System.in);
-    System.out.print("値を入力してください: ");
+    System.out.print("Q5値を入力してください: ");
     int num = scanner1.nextInt();
 	if (num > 0) {
 		System.out.println("正の数です");
@@ -62,7 +62,6 @@ public class Question2 {
 		System.out.println("0です");
 	}else if (num < 0)	{
 		System.out.println("負の数です");
-		scanner1.close();
 	}
 	
 
@@ -72,13 +71,12 @@ public class Question2 {
 		value が 奇数 なら "奇数です" と表示
 	 */
 	Scanner scanner = new Scanner(System.in);
-    System.out.print("値を入力してください: ");
+    System.out.print("Q6値を入力してください: ");
     int value = scanner.nextInt();
 	if (value % 2 == 0) {
 		System.out.println("偶数です");
 	}else {
 		System.out.println("奇数です");
-		scanner.close();
 
 	}
 	/*Q7  int 型の変数 score にコンソール入力で 0 から 100 のいずれかの数値を代入し
@@ -87,7 +85,9 @@ public class Question2 {
 		50 以上なら "可"
 		50 未満なら "不可"　を表示
 	 */
-	int score1 =65;
+	Scanner scanner3 = new Scanner(System.in);
+    System.out.print("Q7値を入力してください: ");
+    int score1 = scanner3.nextInt();
 	if (score1 >= 90 ) {
 		System.out.println("優");
 		}else if (score1 >= 70 && score1 <= 89) {
@@ -101,7 +101,7 @@ public class Question2 {
 	//Q8 コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成してください
 
 	try (Scanner scanner2 = new Scanner(System.in)) {
-        System.out.print("入力してください");
+        System.out.print("Q8入力してください:");
         String input = scanner2.nextLine();
 
         if (input.isBlank()) {
@@ -113,7 +113,9 @@ public class Question2 {
      /*Q9  int 型の変数 day を用意（コンソール入力で1～7 のいずれかの数値を代入）
 			day の値に応じて曜日を表示
       */
-      int day = 2;
+        Scanner scanner4 = new Scanner(System.in);
+        System.out.print("Q9値を入力してください: ");
+        int day = scanner4.nextInt();
       switch (day) {
         case 1:
             System.out.println("今日は月曜日です");
@@ -140,11 +142,57 @@ public class Question2 {
             System.out.println("無効な値です");
       }
 	
-
-	
-	
-	
-	
+/*Q10  int 型の変数 month を用意（コンソール入力で1～12 のいずれかの数値を代入）
+		month の値に応じて季節を表示
+		12, 1, 2 → "冬"
+		3, 4, 5 → "春"
+		9, 10, 11 → "秋"
+		それ以外の値なら "無効な月です" と表示
+		※Switch文を使用してくださ
+ */
+      Scanner scanner5 = new Scanner(System.in);
+      System.out.print("Q10値を入力してください: ");
+      int month = scanner5.nextInt();
+      switch (month) {
+      case 1:
+    	  System.out.println("冬");
+          break;
+         case 2:
+          System.out.println("冬");
+          break;
+         case 3:
+          System.out.println("春");
+          break;
+         case 4:
+          System.out.println("春");
+          break;
+         case 5:
+          System.out.println("春");
+          break;
+         case 6:
+          System.out.println("夏");
+          break;
+         case 7:
+          System.out.println("夏");
+          break;
+         case 8:
+          System.out.println("夏");
+          break;
+          case 9:
+          System.out.println("秋");
+          break;
+          case 10:
+          System.out.println("秋");
+          break;
+          case 11:
+          System.out.println("秋");
+          break;
+          case 12:
+          System.out.println("冬");
+          break;
+          default:
+          System.out.println("無効な値です");
+      }
 	
 	
 	
