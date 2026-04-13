@@ -53,7 +53,7 @@ public class Question2 {
 		num の値が 0 なら "0 です" と表示
 		num の値が 0 より小さければ "負の数です" と表示
 	 */
-	Scanner scanner1 = new Scanner(System.in);
+	Scanner scanner1 = new Scanner(System.in);{
     System.out.print("Q5値を入力してください: ");
     int num = scanner1.nextInt();
 	if (num > 0) {
@@ -70,7 +70,7 @@ public class Question2 {
 		value が 偶数 なら "偶数です" と表示
 		value が 奇数 なら "奇数です" と表示
 	 */
-	Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in) ;
     System.out.print("Q6値を入力してください: ");
     int value = scanner.nextInt();
 	if (value % 2 == 0) {
@@ -85,7 +85,7 @@ public class Question2 {
 		50 以上なら "可"
 		50 未満なら "不可"　を表示
 	 */
-	Scanner scanner3 = new Scanner(System.in);
+	Scanner scanner3 = new Scanner(System.in) ;
     System.out.print("Q7値を入力してください: ");
     int score1 = scanner3.nextInt();
 	if (score1 >= 90 ) {
@@ -113,7 +113,7 @@ public class Question2 {
      /*Q9  int 型の変数 day を用意（コンソール入力で1～7 のいずれかの数値を代入）
 			day の値に応じて曜日を表示
       */
-        Scanner scanner4 = new Scanner(System.in);
+        Scanner scanner4 = new Scanner(System.in) ;
         System.out.print("Q9値を入力してください: ");
         int day = scanner4.nextInt();
       switch (day) {
@@ -196,3 +196,4 @@ public class Question2 {
 	}
 	}
 	}
+}
