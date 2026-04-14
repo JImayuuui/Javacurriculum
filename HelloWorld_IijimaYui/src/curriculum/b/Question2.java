@@ -102,7 +102,8 @@ public class Question2 {
 
 	try (Scanner scanner2 = new Scanner(System.in)) {
         System.out.print("Q8入力してください:");
-        String input = scanner2.nextLine();
+        String input;
+        input= scanner2.nextLine();
 
         if (input.isBlank()) {
             System.out.println("入力が無効です");
