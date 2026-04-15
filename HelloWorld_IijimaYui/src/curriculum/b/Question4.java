@@ -140,23 +140,24 @@ public class Question4 {
 				if (num < min1) {
 		            min1 = num;
 			}
-			}
 		}
-			System.out.println("最大値: " + max1);
-			System.out.println("最小値: " + min1);
+	}
+			System.out.println("Q9最大値: " + max1);
+			System.out.println("Q9最小値: " + min1);
 			
 		//Q10 3次元配列 int[][][] array = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}}; を用意する
 		//配列内のすべての要素を表示
 			int[][][] array3 = {
 					{{1, 2}, {3, 4}}, 
 					{{5, 6},{7, 8}}};
-			for (int[][] row : array3) {
-				for (int[] num : row) {
-					System.out.print(num + " ");	
+			for (int[][] num1 : array3) {
+				for (int[] num2 : num1) {
+					for (int num3 : num2) {
+					System.out.print(num3 + " ");	
 			}
-				System.out.println();
 			}
-			
+			}
+			System.out.println();
 			
 	}
 }
