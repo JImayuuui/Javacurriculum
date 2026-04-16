@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class Question2 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 	//Q1  int 型の変数 score に 75 を代入
 	//  score が 60 以上なら "合格です！" と表示
 	int score = 75;

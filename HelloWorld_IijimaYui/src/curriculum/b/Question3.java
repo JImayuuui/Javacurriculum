@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Question3 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 
 	// Q1 for 文を使って 1 から 10 までの数字を 1 つずつ表示	
 		for (int x = 1; x <= 10; x++) {   
