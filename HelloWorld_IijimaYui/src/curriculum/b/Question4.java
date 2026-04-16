@@ -58,7 +58,7 @@ public class Question4 {
 			結果を表示する際の処理に拡張for文を使用してください
 		 */
 		int[] numbers5 = {1, 2, 3, 4, 5};
-		for (int i = 0; i < numbers.length; i++) { 
+		for (int i = 0; i < numbers5.length; i++) { 
 			numbers[i] = numbers[i] * 2;
 		}
 		

@@ -53,9 +53,9 @@ public class Question2 {
 		num の値が 0 なら "0 です" と表示
 		num の値が 0 より小さければ "負の数です" と表示
 	 */
-	Scanner scanner1 = new Scanner(System.in);{
+	Scanner scanner = new Scanner(System.in);{
     System.out.print("Q5値を入力してください: ");
-    int num = scanner1.nextInt();
+    int num = scanner.nextInt();
 	if (num > 0) {
 		System.out.println("正の数です");
 	}else if (num == 0) {
@@ -70,7 +70,6 @@ public class Question2 {
 		value が 偶数 なら "偶数です" と表示
 		value が 奇数 なら "奇数です" と表示
 	 */
-	Scanner scanner = new Scanner(System.in) ;
     System.out.print("Q6値を入力してください: ");
     int value = scanner.nextInt();
 	if (value % 2 == 0) {
@@ -85,9 +84,8 @@ public class Question2 {
 		50 以上なら "可"
 		50 未満なら "不可"　を表示
 	 */
-	Scanner scanner3 = new Scanner(System.in) ;
     System.out.print("Q7値を入力してください: ");
-    int score1 = scanner3.nextInt();
+    int score1 = scanner.nextInt();
 	if (score1 >= 90 ) {
 		System.out.println("優");
 		}else if (score1 >= 70 && score1 <= 89) {
@@ -100,10 +98,10 @@ public class Question2 {
 	
 	//Q8 コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成してください
 
-	try (Scanner scanner2 = new Scanner(System.in)) {
-        System.out.print("Q8入力してください:");
+	 try (Scanner scanner1 = new Scanner(System.in)) {
+		System.out.println("Q8入力してください:");
         String input;
-        input= scanner2.nextLine();
+        input= scanner1.nextLine();
 
         if (input.isBlank()) {
             System.out.println("入力が無効です");
@@ -114,9 +112,8 @@ public class Question2 {
      /*Q9  int 型の変数 day を用意（コンソール入力で1～7 のいずれかの数値を代入）
 			day の値に応じて曜日を表示
       */
-        Scanner scanner4 = new Scanner(System.in) ;
         System.out.print("Q9値を入力してください: ");
-        int day = scanner4.nextInt();
+        int day = scanner.nextInt();
       switch (day) {
         case 1:
             System.out.println("今日は月曜日です");
@@ -151,9 +148,8 @@ public class Question2 {
 		それ以外の値なら "無効な月です" と表示
 		※Switch文を使用してくださ
  */
-      Scanner scanner5 = new Scanner(System.in);
       System.out.print("Q10値を入力してください: ");
-      int month = scanner5.nextInt();
+      int month = scanner.nextInt();
       switch (month) {
       case 1:
     	  System.out.println("冬");
@@ -193,8 +189,8 @@ public class Question2 {
           break;
           default:
           System.out.println("無効な値です");
-      }
+      		}
+		}
 	}
-	}
-	}
+}
 }
