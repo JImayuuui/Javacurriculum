@@ -7,7 +7,7 @@ private double speed;
 
 // 動物のsetter
 public void setName(String name) {
-    this.name = name; // this.nameはフィールド、右辺のnameは引数を指す
+    this.name = name; 
 }
 // 動物のgetter
 public String getName() {
