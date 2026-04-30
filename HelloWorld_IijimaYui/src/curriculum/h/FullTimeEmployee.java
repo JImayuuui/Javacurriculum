@@ -12,7 +12,6 @@ public class FullTimeEmployee extends Employee {
             if (hoursWorked <= 8) {
                 return hoursWorked * HOURLY_RATE;
             } else {
-                // 8時間分 + 残業分（1.25倍）
                 int regularPay = 8 * HOURLY_RATE;
                 int overTime = hoursWorked - 8;
                 int overTimePay = (int)(overTime * HOURLY_RATE * 1.25);
