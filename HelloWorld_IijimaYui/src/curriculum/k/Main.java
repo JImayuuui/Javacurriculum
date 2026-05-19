@@ -3,8 +3,9 @@ package curriculum.k;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-
+		
+		Payable f1 = new FullTimeEmployee("山田", 160);
+		Payable c1 = new ContractEmployee("佐藤", 120);
 	}
 
 }
