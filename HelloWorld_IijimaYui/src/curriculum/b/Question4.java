@@ -54,10 +54,10 @@ public class Question4 {
 		 */
 		int[] numbers5 = {1, 2, 3, 4, 5};
 		for (int i = 0; i < numbers5.length; i++) { 
-			numbers[i] = numbers[i] * 2;
+			numbers5[i] = numbers5[i] * 2;
 		}
 		
-		for (int num : numbers) {
+		for (int num : numbers5) {
             System.out.println("Q5："+num);
 		}
 		
