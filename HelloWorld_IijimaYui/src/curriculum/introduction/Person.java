@@ -1,9 +1,5 @@
 package curriculum.introduction;
 
-class Person{
-	  // インスタンスフィールドを定義
+public class Person {
 
-	  // コンストラクタを定義しインスタンスフィールドに値をセット
-	  Person(){
-	  }
-	}
+}
