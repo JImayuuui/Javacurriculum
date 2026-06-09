@@ -97,10 +97,9 @@ public class Question2 {
 	
 	//Q8 コンソール入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成してください
 
-	 try (Scanner scanner1 = new Scanner(System.in)) {
 		System.out.println("Q8入力してください:");
         String input;
-        input= scanner1.nextLine();
+        input= scanner.nextLine();
 
         if (input.isBlank()) {
             System.out.println("入力が無効です");
@@ -191,5 +190,4 @@ public class Question2 {
       		}
 		}
 	}
-}
 }
