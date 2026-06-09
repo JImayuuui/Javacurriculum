@@ -24,12 +24,8 @@ public class Question5 {
 	        System.out.println(num1 + " は偶数です。");
 	    } else {
 	        System.out.println(num1 + " は奇数です。");
-	    }
-
-		
-		}  //メソッドの終わり
-		
-
+	    }		
+		}  
 		
 		//Q1 戻り値の設定
 		public static void sayHello() {
@@ -44,6 +40,5 @@ public class Question5 {
 		//Q3 戻り値の設定
 		public static boolean isEven(int num) {
 		return num % 2 == 0;
-		}
-		    
+		} 
 		}

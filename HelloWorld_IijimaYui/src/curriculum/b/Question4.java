@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Question4 {
 
 	public static void main(String[] args) {
-
 		//Q1 int 型の配列 を作成し、1, 2, 3, 4, 5 を格納する
 		//配列の全要素を 順番に表示
 		int[] numbers = {1, 2, 3, 4, 5};
@@ -18,7 +17,6 @@ public class Question4 {
 			配列の要素を 逆順 に表示
 		 */
 		int[] numbers2 = {10, 20, 30, 40, 50};
-		
 		for (int i = numbers2.length - 1; i >= 0; i--) {
 			System.out.println("Q2:"+numbers2[i]);
 		}
@@ -47,10 +45,8 @@ public class Question4 {
 			min = numbers4[i];
 		}
 		}
-		
 		System.out.println("最大値："+max);
 		System.out.println("最小値："+min);
-		
 		
 		/* Q5 int 型の配列 {1, 2, 3, 4, 5} を用意する
 			配列のすべての要素を 2 倍 し、結果を表示
@@ -83,7 +79,6 @@ public class Question4 {
 	        		break;  
 		}
 	    }
-		
 		if(found) {
 			 System.out.println(inputNum +"は配列に含まれています");
 		}else {
@@ -156,9 +151,6 @@ public class Question4 {
 			}
 			}
 			}
-			System.out.println();
-			
+			System.out.println();	
 	}
 }
-
-
